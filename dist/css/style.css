@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Kumbh Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #19a2ae;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#container #bg-top, #container #bg-bottom {
+  width: 100rem;
+  position: absolute;
+}
+
+#container #bg-top {
+  bottom: 40rem;
+  right: 50%;
+}
+
+#container #bg-bottom {
+  top: 40rem;
+  left: 50%;
+}
+
+#card {
+  position: absolute;
+  -webkit-box-shadow: 0rem 1rem 6rem #6a6f81;
+          box-shadow: 0rem 1rem 6rem #6a6f81;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 1.5rem;
+  width: 35rem;
+  height: 38rem;
+  text-align: center;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url("./images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #fff;
+}
+
+#card h3 {
+  font-size: 1.8rem;
+}
+
+#card #top img {
+  border-radius: 50%;
+  border: 0.5rem solid #fff;
+  margin-top: 8rem;
+}
+
+#card #middle {
+  color: #2d3248;
+  margin-top: -2rem;
+  padding: 1rem 0;
+}
+
+#card #middle .age {
+  color: #6a6f81;
+  font-weight: 400;
+  padding-left: 0.5rem;
+}
+
+#card #middle .location {
+  color: #6a6f81;
+  padding-top: 0.8rem;
+  font-size: smaller;
+}
+
+#card #bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2d3248;
+  border-top: 0.1rem solid rgba(150, 150, 150, 0.4);
+  padding: 2.5rem 0;
+}
+
+#card #bottom .data p {
+  color: #6a6f81;
+  font-size: x-small;
+  padding-top: 0.5rem;
+  letter-spacing: 0.2rem;
+}
+
+footer {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 11px;
+  text-align: center;
+}
+
+footer p {
+  display: inline-block;
+  padding-top: 0.8rem;
+}
+
+footer p a {
+  color: #3e52a3;
+}
+
+@media (max-width: 375px) {
+  #card {
+    width: 32rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
